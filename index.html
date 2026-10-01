@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>৯ম জাতীয় পে-স্কেল ২০২৬ - Pay Fixation চেকলিস্ট</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Hind Siliguri) -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="দ্বীপ টেকনোলজি লোগো">
+            </div>
+            <div class="header-title">
+                <h1>📋 ৯মে জাতীয় পে-স্কেল ২০২৬</h1>
+                <p>সরকারি প্রাথমিক বিদ্যালয়ের শিক্ষক — Pay Fixation কাগজপত্র #চেকলিস্ট</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- User Information Form -->
+        <section class="card info-card">
+            <h2><i class="fa-solid fa-user-pen"></i> শিক্ষকের ব্যক্তিগত ও পদবি সংক্রান্ত তথ্য</h2>
+            <form id="teacher-form" class="grid-form">
+                <div class="form-group">
+                    <label for="name">শিক্ষকের নাম:</label>
+                    <input type="text" id="name" placeholder="আপনার নাম লিখুন">
+                </div>
+                <div class="form-group">
+                    <label for="designation">পদবি:</label>
+                    <input type="text" id="designation" placeholder="পদবি লিখুন">
+                </div>
+                <div class="form-group">
+                    <label for="school">বিদ্যালয়:</label>
+                    <input type="text" id="school" placeholder="বিদ্যালয়ের নাম">
+                </div>
+                <div class="form-group">
+                    <label for="upazila">উপজেলা:</label>
+                    <input type="text" id="upazila" placeholder="উপজেলার নাম">
+                </div>
+                <div class="form-group">
+                    <label for="district">জেলা:</label>
+                    <input type="text" id="district" placeholder="জেলার নাম">
+                </div>
+                <div class="form-group">
+                    <label for="grade">বর্তমান গ্রেড:</label>
+                    <input type="text" id="grade" placeholder="বর্তমান গ্রেড">
+                </div>
+                <div class="form-group full-width">
+                    <label for="emp-id">Employee ID:</label>
+                    <input type="text" id="emp-id" placeholder="আইডি নম্বর লিখুন">
+                </div>
+            </form>
+        </section>
+
+        <!-- Progress Bar Section -->
+        <div class="progress-container">
+            <div class="progress-bar-info">
+                <span>চেকলিস্ট অগ্রগতি:</span>
+                <span id="progress-percentage">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+        </div>
+
+        <!-- Checklist Categories Grid -->
+        <div class="checklist-grid">
+            
+            <!-- Category 1 -->
+            <section class="card checklist-card">
+                <h3><i class="fa-solid fa-id-card"></i> ১. পরিচয় ও চাকরির মূল কাগজ</h3>
+                <ul class="checklist-items">
+                    <li><label><input type="checkbox"> ১. জাতীয় পরিচয়পত্র (NID)</label></li>
+                    <li><label><input type="checkbox"> ২. নিয়োগপত্র/নিয়োগ আদেশ</label></li>
+                    <li><label><input type="checkbox"> ৩. যোগদানপত্র/যোগদান প্রতিবেদন</label></li>
+                    <li><label><input type="checkbox"> ৪. বর্তমান পদ/কর্মস্থলের তথ্য</label></li>
+                </ul>
+            </section>
+
+            <!-- Category 2 -->
+            <section class="card checklist-card">
+                <h3><i class="fa-solid fa-file-invoice-dollar"></i> ২. পূর্বের Pay Fixation</h3>
+                <ul class="checklist-items">
+                    <li><label><input type="checkbox"> ৫. ২০১৫ জাতীয় বেতনস্কেলের Pay Fixation-এর কপি</label></li>
+                    <li><label><input type="checkbox"> ৬. ২০১৫ Pay Fixation-এর Verification Number</label></li>
+                    <li><label><input type="checkbox"> ৭. সর্বশেষ Pay Fixation-এর কপি</label></li>
+                    <li><label><input type="checkbox"> ৮. পূর্বে বেতন পুনঃনির্ধারণ হয়ে থাকলে সংশ্লিষ্ট আদেশ ও Fixation</label></li>
+                </ul>
+            </section>
+
+            <!-- Category 3 -->
+            <section class="card checklist-card">
+                <h3><i class="fa-solid fa-award"></i> ৩. উচ্চতর গ্রেড/পদোন্নতি</h3>
+                <ul class="checklist-items">
+                    <li><label><input type="checkbox"> ৯. উচ্চতর গ্রেডের অফিস আদেশ — প্রযোজ্য হলে</label></li>
+                    <li><label><input type="checkbox"> ১০. উচ্চতর গ্রেডের Pay Fixation — প্রযোজ্য হলে</label></li>
+                    <li><label><input type="checkbox"> ১১. পদোন্নতির অফিস আদেশ — প্রযোজ্য হলে</label></li>
+                    <li><label><input type="checkbox"> ১২. পদোন্নতির পর Pay Fixation — প্রযোজ্য হলে</label></li>
+                    <li><label><input type="checkbox"> ১৩. টাইমস্কেল/সিলেকশন গ্রেডের আদেশ — প্রযোজ্য হলে</label></li>
+                </ul>
+            </section>
+
+            <!-- Category 4 -->
+            <section class="card checklist-card">
+                <h3><i class="fa-solid fa-folder-open"></i> ৪. চাকরির রেকর্ড</h3>
+                <ul class="checklist-items">
+                    <li><label><input type="checkbox"> ১৪. সার্ভিস বুকের প্রয়োজনীয় পৃষ্ঠার কপি</label></li>
+                    <li><label><input type="checkbox"> ১৫. চাকরিতে প্রথম যোগদানের তারিখের প্রমাণ</label></li>
+                    <li><label><input type="checkbox"> ১৬. বদলি আদেশ — প্রযোজ্য হলে</label></li>
+                    <li><label><input type="checkbox"> ১৭. বদলির পর যোগদানপত্র — প্রযোজ্য হলে</label></li>
+                    <li><label><input type="checkbox"> ১৮. বেতন/চাকরির অবস্থায় প্রভাব ফেলেছে এমন বিশেষ আদেশ — প্রযোজ্য হলে</label></li>
+                </ul>
+            </section>
+
+            <!-- Category 5 -->
+            <section class="card checklist-card">
+                <h3><i class="fa-solid fa-money-check-dollar"></i> ৫. বর্তমান বেতনের তথ্য</h3>
+                <ul class="checklist-items">
+                    <li><label><input type="checkbox"> ১৯. সর্বশেষ Pay Slip</label></li>
+                    <li><label><input type="checkbox"> ২০. ৩০ জুন ২০২৬ তারিখের Basic Pay-এর তথ্য</label></li>
+                    <li><label><input type="checkbox"> ২১. বর্তমান Grade-এর তথ্য</label></li>
+                    <li><label><input type="checkbox"> ২২. বর্তমান Step/ধাপের তথ্য</label></li>
+                    <li><label><input type="checkbox"> ২৩. সর্বশেষ বার্ষিক বেতন বৃদ্ধির (Increment) তথ্য</label></li>
+                </ul>
+            </section>
+
+            <!-- Category 6 -->
+            <section class="card checklist-card">
+                <h3><i class="fa-solid fa-laptop-code"></i> ৬. iBAS++ সংক্রান্ত তথ্য</h3>
+                <ul class="checklist-items">
+                    <li><label><input type="checkbox"> ২৪. iBAS++ Employee ID</label></li>
+                    <li><label><input type="checkbox"> ২৫. NID নম্বর</label></li>
+                    <li><label><input type="checkbox"> ২৬. নিবন্ধিত মোবাইল নম্বর</label></li>
+                    <li><label><input type="checkbox"> ২৭. পূর্বের Pay Fixation Verification Number</label></li>
+                    <li><label><input type="checkbox"> ২৮. প্রয়োজনীয় অফিস আদেশের পরিষ্কার স্ক্যান কপি</label></li>
+                </ul>
+            </section>
+
+        </div>
+
+        <!-- File Ordering & Last Check Section -->
+        <div class="grid-two-col">
+            <section class="card info-box suggestion-box">
+                <h3><i class="fa-solid fa-star"></i> ফাইল সাজানোর প্রস্তাবিত ক্রম</h3>
+                <ol class="custom-list">
+                    <li>NID</li>
+                    <li>নিয়োগপত্র</li>
+                    <li>যোগদানপত্র</li>
+                    <li>সার্ভিস বুকের প্রাসঙ্গিক পৃষ্ঠা</li>
+                    <li>২০১৫ Pay Fixation</li>
+                    <li>Verification Number</li>
+                    <li>উচ্চতর গ্রেড/পদোন্নতির আদেশ</li>
+                    <li>সংশ্লিষ্ট Pay Fixation</li>
+                    <li>সর্বশেষ Pay Slip</li>
+                    <li>সর্বশেষ Increment-এর তথ্য</li>
+                    <li>অন্যান্য প্রাসঙ্গিক অফিস আদেশ</li>
+                </ol>
+            </section>
+
+            <section class="card info-box verify-box">
+                <h3><i class="fa-solid fa-circle-check"></i> শেষবার যাচাই (Final Verify)</h3>
+                <ul class="checklist-items double-verify">
+                    <li><label><input type="checkbox"> নামের বানান সব কাগজে একই</label></li>
+                    <li><label><input type="checkbox"> NID নম্বর সঠিক</label></li>
+                    <li><label><input type="checkbox"> জন্মতারিখ সঠিক</label></li>
+                    <li><label><input type="checkbox"> প্রথম যোগদানের তারিখ সঠিক</label></li>
+                    <li><label><input type="checkbox"> বর্তমান Grade সঠিক</label></li>
+                    <li><label><input type="checkbox"> বর্তমান Basic সঠিক</label></li>
+                    <li><label><input type="checkbox"> Increment-এর তারিখ সঠিক</label></li>
+                    <li><label><input type="checkbox"> উচ্চতর গ্রেডের তথ্য সঠিক</label></li>
+                    <li><label><input type="checkbox"> ২০১৫ Pay Fixation-এর Verification Number সঠিক</label></li>
+                    <li><label><input type="checkbox"> সব স্ক্যান কপি পরিষ্কার ও পাঠযোগ্য</label></li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Advisory Banner -->
+        <div class="alert-box">
+            <i class="fa-solid fa-lightbulb"></i>
+            <p><strong>পরামর্শ:</strong> মূল কাগজপত্র জমা না দিয়ে ফটোকপি/স্ক্যান কপি প্রস্তুত রাখুন এবং মূল কাগজগুলো যাচাইয়ের জন্য সঙ্গে রাখুন। চূড়ান্ত ৯ম পে-স্কেল প্রজ্ঞাপন ও অর্থ বিভাগ/প্রাথমিক শিক্ষা অধিদপ্তরের নির্দেশনায় কোনো অতিরিক্ত কাগজ নির্ধারিত হলে সেটি যুক্ত করতে হবে।</p>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons no-print">
+            <button onclick="window.print()" class="btn btn-print"><i class="fa-solid fa-print"></i> প্রিন্ট করুন</button>
+            <button onclick="resetChecklist()" class="btn btn-reset"><i class="fa-solid fa-rotate-right"></i> রিসেট করুন</button>
+        </div>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container footer-content">
+            <img src="logo.png" alt="দ্বীপ টেকনোলজি লোগো" class="footer-logo">
+            <p>তৈরি ও ডেভেলপমেন্ট করেছে: <strong>দ্বীপ টেকনোলজি</strong></p>
+            <p class="copyright">&copy; ২০২৬ দ্বীপ টেকনোলজি। সর্বস্বত্ব সংরক্ষিত।</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
